@@ -1,0 +1,78 @@
+Question 1: Using proper pseudo-code, describe the following primitive algorithms:
+
+Making coffee:
+	function makeCoffee:
+		GET a cup
+		PUT water in that cup
+		IF water is hot THEN:
+			PUT coffee AND sugar into water;
+		ELSE heat water in two minutes THEN
+			PUT coffee AND sugar into water;
+		END IF
+	END FUNCTION;
+
+Washing dishes:
+	function washDishes:
+		PUT dirty dishes into the dishwasher machine;
+		PRESS start button and wait 30 minutes;
+		AFTER 30 minutes, Take dishes out
+	END FUNCTION;
+
+
+Wash Clothes:
+	function washClothes:
+		PUT detergent into the washing machine;
+		PUT dirty clothes into the washing machine;
+		Press start button and wait 30 minutes;
+		After 30 mitutes, PUT clothes into the dryer;
+		ADD softener and SET time to 60 minutes;
+		After 60 minutes, Check clothes;
+		IF clothes are still wet THEN:
+			PUT clothes into the dryer again;
+			SET time to 30 minutes;
+		ELSE take clothes out of the dryer;
+		END IF;
+	END FUNCTION;
+
+
+Question 2: 
+
+Walmart uses algorithmic retailing to improve retailer performance and customer experiences for their stores. Walmart uses Eden technology, 
+which extracts knowledge from big data through machine learning via an algorithm. As a result, the stores have a better monitor and care for
+fresh fruits and vegetables. So, they can predict the shelf life of veggies.
+
+(https://blogs.gartner.com/robert-hetu/walmarts-freshness-algorithm-great-example-algorithmic-retailing/)
+
+UPS is one of the successful companies that apply algorithms for their business. UPS applies telematics and algorithms to optimize the
+processes
+and revenue streams. 
+
+Amazon applies algorithms in their businesses to keep track of the information of their customers and products that customers want to buy. 
+For example,
+Based on the information from looking at the purchase or rating history of the users, Amazon generates the recommendations for 
+the related products or recommendations for the lists of items that may go together. 
+
+Question 3: Hypothesize about what constitutes an efficient algorithm versus an inefficient algorithm.
+
+An algorithm is efficient or not depends on two crucial factors: time and space - How fast does the algorithm take to complete and how much
+working
+memory is needed to operate. If an algorithm takes less time and less space to complete a process, it is considered an efficient 
+algorithm.
+Besides these two crucial factors, there are some other factors that constitute an efficient algorithm such as Money, Operational 
+Complexity, 
+Network utilization, or Network calls.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		

@@ -1,0 +1,50 @@
+Question 1: What is time complexity and what is its relation to algorithms?
+	Time complexity is a function that estimates the time for running an execution. Time complexity is estimated by counting the number
+elementary steps performed by any algorithm to complete the program. 
+
+Question 2: What is runtime?
+	Runtime is physical time duration of an algorithm. 
+
+Question 3: How is the runtime of an algorithm calculated?
+	
+	The most common metric to calculate runtime is Big O notation. We add up all instructions the algorithm will execute as a function of the
+size of its input, then simplify the expression to the largest term and get rid of all the constants.
+
+Question 4: Name the six types of algorithm growth rates we saw in this checkpoint and list them in order of most efficient to least efficient.
+Now Google another algorithmic growth rate not covered and place it in the correct spot in your list.
+
+	1. Constant Growth Rate.
+	2. Logarithmic Growth Rate.
+	3. Linear Growth Rate.
+	4. Log-Linear Growth Rate.
+	5. Quadratic Growth Rate.
+	6. Cubic Growth Rate.
+	7. Polynomial Growth Rate.
+	8. Exponential Growth Rate.
+	9. Factorial Growth Rate.
+
+Question 5: Choose one of the algorithmic growth rates from the last question and make a comparison to a real-life situation.
+	
+	Exponential Growth Rate in bacteria where the growth increases rapidly. At time t = 0, we put 100 bacteria into the favorable
+growth medium. Around 6 hours later, the number of bacteria increases to 450 bacteria. Within 24 hours, the number of bacteria will reach 1800.
+
+Question 6: Determine the time complexity of the following snippet of code. It is commonly known as a linear search.
+
+	Cal numbers in the array is n. For each number in the array, we run n times. When the loop stops,we return False 1 time. So, 
+total is n times + 1 time. We get rid of constant 1 time, and keep n times. So, time complexity is n times or O(n).
+
+Question 7: 
+
+	Call numbers in the array is n. Program runs n times in the array for the first loop + n times in the array for the second loop. 
+Program prints "Hello" n + n times, which means n^2 times. So, time complexity is O(n^2).
+
+Question 8: 
+	It's exponential growth rate: O(2^n).
+	
+
+Question 9: Out of the code snippets you just saw, which is the most time efficient?
+	Linear Search O(n) is the most time efficient. 
+
+	
+
+	

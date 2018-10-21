@@ -1,0 +1,81 @@
+Question 1: What is a real-life scenario that uses linear search?
+	There is a list name of students in a class. If a teacher wants to find a specific name, for instance "Emma", she has to look through the
+name list from the top to the bottom to find "Emma."
+
+Question 2: What is a real-life scenario that uses binary search?
+	Finding a book in the library is an example of binary search. All books in the library are well arranged and sorted alphabetically.
+We determine total number of racks and the middle rack. Then, we can ignore the first half of the racks or the second half, repeat the same process
+until we find the book that we want. 
+
+Question 3: Given the alphabetically sorted collection in this checkpoint, how many iterations would it take to find the value G using linear search?
+	7 iterations.
+
+Question 4:Given the alphabetically sorted collection in this checkpoint, how many iterations would it take to find the value G using binary search?
+	3 iterations.
+
+Question 5:Given an unsorted collection of a million items, which algorithm would you choose between linear search and binary search? 
+Explain your reasoning.
+	I would choose linear search because the collection is unsorted, so we had to check every item in the collection.
+
+
+Question 6: Given a sorted collection of a million items, which algorithm would you choose between linear search and binary search? 
+Explain your reasoning.
+	I would choose binary search because binary search is more efficient when the collection is sorted. And using binary search would help us 
+to reduce the iteration to the half way.
+
+
+Programming Assignment:
+
+Question 1: You and a friend have set a wager to see who can find the word "Albatross" in the dictionary the fastest. 
+Write a program to allow you to win the bet.
+
+
+        let words = ['World', 'Brother','Albatross', 'AA', 'World', 'Yes'];
+        function findWord(list, word){
+            list.sort();
+            let start=0;
+            let end= list.length-1;
+            let middle = Math.floor((start+end)/2)
+            while(list[middle]!== word && start<end){
+                if(list[middle]>word){
+                    end = middle-1
+                }else{
+                    start = middle+ 1;
+                }
+                middle = Math.floor((start+end)/2);
+            }
+            return (list[middle]!==word) ? -1: middle;
+
+        }
+
+        console.log(findWord(words, 'Albatross'));
+
+
+Question 2: You work at a pet store, and a child has asked you to net the only white-spotted goldfish from the fish tank. 
+Write a program that will help you net the right fish.
+
+        let tank = ['black', 'white','white-spotted', 'red','yellow'];
+        function findRightFish(tank, fish){
+            for(let i =0; i<tank.length; i++){
+                if(fish=== tank[i]){
+                    return fish;
+                }
+            }
+            return "not found";
+            }
+
+        console.log(findRightFish(tank, "w"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+

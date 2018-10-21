@@ -1,0 +1,93 @@
+Question 1: Define and compare recursion and iteration.
+
+Define:
+	Recursion: is a way of solving problem by having a function call itself. 
+	Iteration is the technique that utilizes a loop to repeat a process.
+Compare: 
+	Using recursion,the execution is slow.If the function does not meet to base case, it leads to infinite recursion. 
+	Iteration can be harder to implement but fast in execution. If the control condition does not become false, it lead to infinite iteration.
+Iteration makes code longer compared to recursion. 
+
+Question 2: Name five algorithms that are commonly implemented by recursion.
+	Fibonacci sequence.
+	Factorial.
+	Binary Search.
+	Towers of Hanoi.
+	Merge sort.
+
+Question 3: When should you use recursion, and when should you avoid recursion? Give examples for each.
+	When the algorithms can be defined as a combination of sub-results starting with known cases, using recursion technique is a good idea.
+For example, if we have original problem and want to devide it into smaller instances of itself to solve those smaller instances, and then reassemble
+them into the final solution. In this case, we should use recursion. However, when algorithms require the running straight throught data set, we should 
+use iteration in stead of recursion. 
+	
+
+Question 4: Compare the recursive and iterative solutions to the three algorithms from the checkpoint (factorial, maximum, and fibonacci).
+What is similar, and what is different?
+
+Similar: We can get the results by using both recursion and iteration. Both ways require condition to stop the function. 
+Differences: The maximum function written by using iteration technique, there are a few lines of code, and they look clean and simple.
+While maximum function written by using recursion technique, the code looks more complicated and the function requires nearly double lines of code 
+compared to the function written by using iteration technique.
+For the Fibonacci and Factorial functions, the number lines of code are the same for both iteration and recursion technique, but code looks simplier
+in the functions that use iteration technique.
+
+Question 5: Given a multi-dimensional collection (such as an array) where the number of dimensions is unknown, write a recursive algorithm to count 
+the number of items in the entire collection.
+
+
+        let arr = [[1,0], [1,[2,6]]];
+        function countArrayElement(arr){
+            count=0;
+            if(Array.isArray(arr)===false){
+                return 1;
+            }else{
+                for (element of arr) { //recheck of and in in Array
+                    count+=  countArrayElement(element)
+                }
+            }return count
+        }
+
+        console.log(countArrayElement(arr))
+
+
+
+Question 6: A palindrome is a word or phrase whose spelling is the same either direction (e.g., racecar). Write a recursive algorithm to determine if 
+a given word or phrase is a palindrome.
+
+        function checkPalindrome(str){
+            var re = /[^A-Za-z0-9]/g; //Use Regular expression to move special characters
+            str = str.toLowerCase().replace(re, ''); //
+            if(str.length <= 1) {return true}
+            else if(str[0]===str[str.length-1]){
+                return checkPalindrome(str.substring(1,str.length-1))
+            }
+            else{
+                return `Not Palindrome. `
+            }
+        }
+
+        console.log(checkPalindrome('A man, a plan, a canal. Panama'))
+        console.log(checkPalindrome('racecar'));
+        console.log(checkPalindrome('test'))
+
+Question 7: Google Easter Egg: Google the term "recursion". Google will prompt you with "Did you mean: recursion". 
+Explain why this behavior exhibits properties of recursion.
+
+	That's a computer science joke that Google provides: it means that "To understand recursion, you must first understand recursion."
+This joke is based on that fact that recursive functions are defined in terms of calls on themselves.
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	

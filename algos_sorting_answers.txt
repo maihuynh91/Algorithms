@@ -1,0 +1,75 @@
+Quesiton 1:Write pseudocode for bubble sort.
+
+   FUNCTION bubbleSort(list)
+	FOR i from 0 in list
+	  FOR j from 1 in list
+		IF list[j-1] > list[j] THEN:
+			SET temp = list[j-1];
+			SET list[j-1] = list[j];
+			SET list[j] = temp;
+		END IF
+	  END FOR
+	END FOR
+	RETURN list
+   END FUNCTION
+
+
+
+Question 2:Write pseudocode for quicksort.
+
+	FUNCTION quickSort(array){
+	   SET left= [];
+	   SET right= [];
+	   SET pivot = arr[arr.length-1];
+
+           IF (arr.length<=1) THEN
+		RETURN arr;
+	   FOR (let i = 0; i<arr.length-1; i++)
+		IF (arr[i]<pivot) THEN
+		    left.push(arr[i]);
+		ELSE
+		    right.push(arr[i]);
+	   END FOR;
+
+	   SET front = quickSort(left);
+	   SET rear = quickSort(right);
+	   RETURN (...front,pivot,...rear);
+	END FUNCTION;
+	}
+
+Question 3: We talked about time complexity in a previous checkpoint, and how to get an idea of the efficiency of an algorithm. 
+After looking at the pseudocode for the above sorting methods, identify why merge sort and quick sort are much more efficient than 
+the others. Walking through each algorithm with a few sample collections may help.
+
+Merge sort is efficient because it recursively breaks collection into sub-collections. After sub-collections are sorted, it merges all sub-collections to
+produce the sorted collections. Merge sort works well with large collections because it does not have to iterate through the same collection again.
+
+Quicksort is efficient because it requires little space. Quicksort doesn't need extra space to perform sorting. 
+
+
+Question 4: All of the sorts addressed in this checkpoint are known as comparison sorts. Research bucket sort and explain how it works. 
+What is the ideal input for bucket sort?
+
+Bucket sort divides elemenets in the array into different buckets. Then those buckets are sorted individually by using different sorting algorithms.
+Bucket Sorting Steps: 
+	1. Create an array.
+	2. Go through the array and puts each object into its bucket.
+	3. Sort each of the non-empty buckets by using different sorting algorithm.	
+	4. Gather all sorted elements.
+The input for bucket sort is the data that are drawn from a uniform distribution. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

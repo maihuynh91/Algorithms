@@ -1,27 +1,38 @@
 Question 1: Using proper pseudo-code, describe the following primitive algorithms:
 
 Making coffee:
-	function makeCoffee:
-		GET a cup
-		PUT water in that cup
-		IF water is hot THEN:
-			PUT coffee AND sugar into water;
-		ELSE heat water in two minutes THEN
-			PUT coffee AND sugar into water;
-		END IF
+
+	FUNCTION makeCoffee:
+    		Add coffee in coffee machine;
+    		Add water to coffee machine;
+    		Start coffee machine;
+    		Pour coffee into cup;
+    		IF (sugar is required) THEN 
+        	    Add two sugars;
+        	ELSE 
+		   don’t add two sugars;
+    		ENDIF
+    		Serve;
 	END FUNCTION;
 
+
 Washing dishes:
-	function washDishes:
-		PUT dirty dishes into the dishwasher machine;
+
+	FUNCTION washDishes:
+		Open dishwasher;
+		Collect dirty dishes;
+		Rinse dirty dish in sink and put in dishwasher;
+		Add soap to dishwasher;
+		Close dishwasher;
 		PRESS start button and wait 30 minutes;
-		AFTER 30 minutes, Take dishes out
+		AFTER 30 minutes, Take dishes out;
 	END FUNCTION;
 
 
 Wash Clothes:
-	function washClothes:
+	FUNCTION washClothes:
 		PUT detergent into the washing machine;
+		Collect dirty clothes;
 		PUT dirty clothes into the washing machine;
 		Press start button and wait 30 minutes;
 		After 30 mitutes, PUT clothes into the dryer;
@@ -33,6 +44,7 @@ Wash Clothes:
 		ELSE take clothes out of the dryer;
 		END IF;
 	END FUNCTION;
+
 
 
 Question 2: 
